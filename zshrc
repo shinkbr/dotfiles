@@ -45,11 +45,6 @@ alias glcc='gcc -lglut -lGLU -lGL -lm'
 alias gl++='g++ -lglut -lGLU -lGL -lm'
 
 
-#cd
-setopt auto_cd
-chpwd(){ls}
-
-
 #In SSH
 if [ "$SSH_CLIENT" != "" ]; then
 	TERM=xterm
@@ -66,6 +61,11 @@ case "$OSTYPE" in
 		alias glcc='gcc -framework OpenGL -framework GLUT -framework Foundation "$@"'
 		alias gl++='g++ -framework OpenGL -framework GLUT -framework Foundation "$@"';;
 esac
+
+
+#cd
+setopt auto_cd
+chpwd(){ls}
 
 
 #Run
