@@ -6,7 +6,7 @@ export PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH" #Ruby on Rails
 #Vim binds
 bindkey -v
 if which vim > /dev/null; then
-	export EDITOR=vim
+  export EDITOR=vim
 fi
 
 
@@ -47,19 +47,19 @@ alias gl++='g++ -lglut -lGLU -lGL -lm'
 
 #In SSH
 if [ "$SSH_CLIENT" != "" ]; then
-	TERM=xterm
-	PROMPT='%F{green}[%n-%D{%T}]%#%f '
-	RPROMPT='%F{yellow}[%/%f%F{green}@%M%f%F{yellow}]%f'
+  TERM=xterm
+  PROMPT='%F{green}[%n-%D{%T}]%#%f '
+  RPROMPT='%F{yellow}[%/%f%F{green}@%M%f%F{yellow}]%f'
 fi
 
 
 #In Mac
 case "$OSTYPE" in
-	darwin*)
-		export LSCOLORS=gxfxcxdxbxegedabagacad
-		alias ls='ls -G'
-		alias glcc='gcc -framework OpenGL -framework GLUT -framework Foundation "$@"'
-		alias gl++='g++ -framework OpenGL -framework GLUT -framework Foundation "$@"';;
+  darwin*)
+    export LSCOLORS=gxfxcxdxbxegedabagacad
+    alias ls='ls -G'
+    alias glcc='gcc -framework OpenGL -framework GLUT -framework Foundation "$@"'
+    alias gl++='g++ -framework OpenGL -framework GLUT -framework Foundation "$@"';;
 esac
 
 

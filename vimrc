@@ -19,7 +19,7 @@ highlight Comment ctermfg=32
 set autoindent
 set tabstop=2
 set shiftwidth=2
-"set expandtab
+set expandtab
 filetype plugin indent on
 
 "Remap
