@@ -4,6 +4,11 @@ set fileencodings=utf-8,euc-jp,iso-2022-jp,shift_jis
 set fileformats=unix,mac,dos
 set backspace=indent,eol,start
 
+"Autocmds
+autocmd BufNewFile *.c 0r $HOME/.vim/template/template.c
+autocmd BufNewFile *.cpp 0r $HOME/.vim/template/template.cpp
+autocmd BufNewFile *.tex 0r $HOME/.vim/template/template.tex
+
 "View
 syntax on
 set confirm
@@ -38,7 +43,3 @@ set wrapscan
 "Completion
 set wildmenu
 set wildmode=list:full
-
-"Autocmds
-autocmd BufNewFile *.c 0r $HOME/.vim/template/template.c
-autocmd BufNewFile *.cpp 0r $HOME/.vim/template/template.cpp
