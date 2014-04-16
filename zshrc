@@ -43,6 +43,7 @@ alias lal='ls -la'
 alias javac='javac -J-Duser.language=en -J-Duser.country=us'
 alias glcc='gcc -lglut -lGLU -lGL -lm'
 alias gl++='g++ -lglut -lGLU -lGL -lm'
+alias vimr='vim -R'
 
 
 #In SSH

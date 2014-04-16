@@ -1,2 +1,4 @@
 map w :open weblios<Space>
 map W :tabopen weblios<Space>
+noremap <C-a> <Ins><C-a><Ins>
+inoremap <C-a> <Ins><C-a><Ins>

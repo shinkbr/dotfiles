@@ -41,4 +41,5 @@ set wildmode=list:full
 
 "Autocmds
 autocmd BufNewFile *.c 0r $HOME/.vim/template/template.c
+autocmd BufNewFile *.cpp 0r $HOME/.vim/template/template.cpp
 autocmd BufNewFile *.java 0r $HOME/.vim/template/template.java
