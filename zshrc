@@ -53,6 +53,7 @@ if [ "$SSH_CLIENT" != "" ]; then
   TERM=xterm
   PROMPT='%F{green}[%n-%D{%T}]%#%f '
   RPROMPT='%F{yellow}[%/%f%F{green}@%M%f%F{yellow}]%f'
+  tmux attach
 fi
 
 
