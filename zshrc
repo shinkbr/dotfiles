@@ -35,6 +35,9 @@ RPROMPT='%F{yellow}[%/]%f'
 
 
 #Aliases
+alias v=vim
+alias vr='vim -R'
+alias vimr='vim -R'
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -a'
@@ -43,7 +46,6 @@ alias lal='ls -la'
 alias javac='javac -J-Duser.language=en -J-Duser.country=us'
 alias glcc='gcc -lglut -lGLU -lGL -lm'
 alias gl++='g++ -lglut -lGLU -lGL -lm'
-alias vimr='vim -R'
 
 
 #In SSH
