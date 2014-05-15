@@ -1,21 +1,21 @@
-#PATH
+# PATH
 export PATH=/usr/local/bin:$HOME/.bin:$PATH
 export PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH" #Ruby on Rails
 
 
-#Vim binds
+# Vim binds
 bindkey -v
 if which vim > /dev/null; then
   export EDITOR=vim
 fi
 
 
-#Completion
+# Completion
 autoload -Uz compinit
 compinit
 
 
-#History
+# History
 HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
@@ -25,16 +25,16 @@ setopt hist_ignore_dups
 setopt hist_reduce_blanks
 
 
-#Colors
+# Colors
 export LS_COLORS='di=00;36:ln=00;35'
 
 
-#Prompts
+# Prompts
 PROMPT='%F{196}[%n-%D{%T}]%#%f '
 RPROMPT='%F{011}[%/]%f'
 
 
-#Aliases
+# Aliases
 alias v=vim
 alias vr='vim -R'
 alias vimr='vim -R'
@@ -48,7 +48,7 @@ alias glcc='gcc -lglut -lGLU -lGL -lm'
 alias gl++='g++ -lglut -lGLU -lGL -lm'
 
 
-#In SSH
+# In SSH
 if [ "$SSH_CLIENT" != "" ]; then
   TERM=xterm
   PROMPT='%F{green}[%n-%D{%T}]%#%f '
@@ -57,7 +57,7 @@ if [ "$SSH_CLIENT" != "" ]; then
 fi
 
 
-#In Mac
+# In Mac
 case "$OSTYPE" in
   darwin*)
     PROMPT='%F{red}[%n-%D{%T}]%#%f '
@@ -69,10 +69,10 @@ case "$OSTYPE" in
 esac
 
 
-#cd
+# cd
 setopt auto_cd
 chpwd(){ls}
 
 
-#Run
+# Run
 ls

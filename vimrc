@@ -4,12 +4,12 @@ set fileencodings=utf-8,euc-jp,iso-2022-jp,shift_jis
 set fileformats=unix,mac,dos
 set backspace=indent,eol,start
 
-"Autocmds
+" Autocmds
 autocmd BufNewFile *.c 0r $HOME/.vim/template/template.c
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/template.cpp
 autocmd BufNewFile *.tex 0r $HOME/.vim/template/template.tex
 
-"View
+" View
 syntax on
 set confirm
 set cursorline
@@ -20,26 +20,26 @@ set showmatch
 set ruler
 highlight Comment ctermfg=32
 
-"Tab
+" Tab
 set autoindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
 filetype plugin indent on
 
-"Remap
+" Remap
 nnoremap j gj
 nnoremap k gk
 map <Down> j
 map <Up> k
 
-"Search
+" Search
 set hlsearch
 set ignorecase
 set incsearch
 set smartcase
 set wrapscan
 
-"Completion
+" Completion
 set wildmenu
 set wildmode=list:full
