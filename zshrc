@@ -60,6 +60,8 @@ fi
 #In Mac
 case "$OSTYPE" in
   darwin*)
+    PROMPT='%F{red}[%n-%D{%T}]%#%f '
+    RPROMPT='%F{yellow}[%/]%f'
     export LSCOLORS=gxfxcxdxbxegedabagacad
     alias ls='ls -G'
     alias glcc='gcc -framework OpenGL -framework GLUT -framework Foundation "$@"'
