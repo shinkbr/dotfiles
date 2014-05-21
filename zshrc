@@ -30,8 +30,8 @@ export LS_COLORS='di=00;36:ln=00;35'
 
 
 # Prompts
-PROMPT='%F{196}[%n-%D{%T}]%#%f '
-RPROMPT='%F{011}[%/]%f'
+PROMPT='%F{red}[%n-%D{%T}]%#%f '
+RPROMPT='%F{yellow}[%/]%f'
 
 
 # Aliases
