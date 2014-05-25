@@ -66,6 +66,7 @@ case "$OSTYPE" in
     alias gl++='g++ -framework OpenGL -framework GLUT -framework Foundation "$@"';;
 esac
 
+source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # cd
 setopt auto_cd
