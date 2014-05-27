@@ -3,7 +3,7 @@ export PATH=/usr/local/bin:$HOME/.bin:$PATH
 export PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH" #Ruby on Rails
 
 
-# Vim binds
+# Vim bind
 bindkey -v
 if which vim > /dev/null; then
   export EDITOR=vim
@@ -25,10 +25,6 @@ setopt hist_ignore_dups
 setopt hist_reduce_blanks
 
 
-# Colors
-export LS_COLORS='di=00;36:ln=00;35'
-
-
 # Prompts
 PROMPT='%F{red}[%n-%D{%T}]%#%f '
 RPROMPT='%F{yellow}[%/]%f'
@@ -38,14 +34,11 @@ RPROMPT='%F{yellow}[%/]%f'
 alias v=vim
 alias vr='vim -R'
 alias vimr='vim -R'
-alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lal='ls -la'
 alias javac='javac -J-Duser.language=en -J-Duser.country=us'
-alias glcc='gcc -lglut -lGLU -lGL -lm'
-alias gl++='g++ -lglut -lGLU -lGL -lm'
 
 
 # In SSH
@@ -57,16 +50,24 @@ if [ "$SSH_CLIENT" != "" ]; then
 fi
 
 
-# In Mac
+# OS-specific configuration
 case "$OSTYPE" in
   darwin*)
     export LSCOLORS=gxfxcxdxbxegedabagacad
     alias ls='ls -G'
     alias glcc='gcc -framework OpenGL -framework GLUT -framework Foundation "$@"'
     alias gl++='g++ -framework OpenGL -framework GLUT -framework Foundation "$@"';;
+  linux-gnu)
+    export LS_COLORS='di=00;36:ln=00;35'
+    alias ls='ls --color=auto'
+    alias glcc='gcc -lglut -lGLU -lGL -lm'
+    alias gl++='g++ -lglut -lGLU -lGL -lm';;
 esac
 
+
+# Syntax highlighting
 source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 
 # cd
 setopt auto_cd
