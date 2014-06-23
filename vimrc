@@ -8,6 +8,7 @@ set backspace=indent,eol,start
 autocmd BufNewFile *.c 0r $HOME/.vim/template/template.c
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/template.cpp
 autocmd BufNewFile *.tex 0r $HOME/.vim/template/template.tex
+autocmd BufNewFile *.html 0r $HOME/.vim/template/template.html
 
 " View
 syntax on
