@@ -67,7 +67,7 @@ case "$OSTYPE" in
     alias glcc='gcc -lglut -lGLU -lGL -lm'
     alias gl++='g++ -lglut -lGLU -lGL -lm'
 
-    # perl
+    # perlbrew
     source ~/.perl5/etc/bashrc;;
 esac
 
