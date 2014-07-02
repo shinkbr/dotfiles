@@ -65,7 +65,10 @@ case "$OSTYPE" in
     export LS_COLORS='di=00;36:ln=00;35'
     alias ls='ls --color=auto'
     alias glcc='gcc -lglut -lGLU -lGL -lm'
-    alias gl++='g++ -lglut -lGLU -lGL -lm';;
+    alias gl++='g++ -lglut -lGLU -lGL -lm'
+
+    # perl
+    source ~/.perl5/etc/bashrc;;
 esac
 
 
