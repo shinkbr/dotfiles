@@ -33,6 +33,7 @@ nnoremap j gj
 nnoremap k gk
 map <Down> j
 map <Up> k
+nnoremap ; :
 
 " Search
 set hlsearch
