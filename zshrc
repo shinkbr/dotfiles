@@ -2,7 +2,6 @@
 export PATH=/usr/local/bin:$HOME/.bin:$PATH
 export PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH" #Ruby on Rails
 
-
 # rbenv
 eval "$(rbenv init -)"
 
