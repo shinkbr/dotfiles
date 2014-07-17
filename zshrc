@@ -38,6 +38,7 @@ fi
 alias v=vim
 alias vr='vim -R'
 alias vimr='vim -R'
+alias l='ls'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
