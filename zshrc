@@ -43,6 +43,7 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lal='ls -la'
 alias javac='javac -J-Duser.language=en -J-Duser.country=us'
+alias g='git'
 
 # OS-specific configuration
 case $OSTYPE in
