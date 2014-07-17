@@ -65,7 +65,7 @@ chpwd(){ls}
 # In SSH
 if [ ! -z $SSH_CLIENT ]
 then
-  TERM=rxvt-unicode-256color
+  TERM=xterm
   if [ -z $TMUX ]
   then
     tmux attach
