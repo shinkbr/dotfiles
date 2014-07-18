@@ -1,3 +1,9 @@
+" Templates
+autocmd BufNewFile *.c 0r $HOME/.vim/template/template.c
+autocmd BufNewFile *.cpp 0r $HOME/.vim/template/template.cpp
+autocmd BufNewFile *.tex 0r $HOME/.vim/template/template.tex
+autocmd BufNewFile *.html 0r $HOME/.vim/template/template.html
+
 " Encodings & File formats
 set encoding=utf-8
 set fileencodings=utf-8,euc-jp,iso-2022-jp,shift_jis
@@ -6,12 +12,6 @@ set backspace=indent,eol,start
 
 " No vi compatibility
 set nocompatible
-
-" Templates
-autocmd BufNewFile *.c 0r $HOME/.vim/template/template.c
-autocmd BufNewFile *.cpp 0r $HOME/.vim/template/template.cpp
-autocmd BufNewFile *.tex 0r $HOME/.vim/template/template.tex
-autocmd BufNewFile *.html 0r $HOME/.vim/template/template.html
 
 " View
 syntax on
@@ -33,12 +33,14 @@ set expandtab
 filetype plugin indent on
 
 " Remap
-map <Down> j
-map <Up> k
-nnoremap j gj
-nnoremap k gk
+nmap j gj
+nmap k gk
 nnoremap ; :
 nnoremap : ;
+imap <C-j> <C-o>gj
+imap <C-k> <C-o>gk
+imap <C-h> <Left>
+imap <C-l> <Right>
 
 " Brackets completion
 inoremap {<Enter> {<Enter>}<Esc>O
