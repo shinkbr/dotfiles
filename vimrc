@@ -36,7 +36,6 @@ filetype plugin indent on
 nmap j gj
 nmap k gk
 nnoremap ; :
-nnoremap : ;
 imap <C-j> <C-o>gj
 imap <C-k> <C-o>gk
 imap <C-h> <Left>
