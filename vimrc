@@ -15,6 +15,7 @@ set nocompatible
 
 " View
 syntax on
+set nowrap
 set confirm
 set cursorline
 set mouse=a
