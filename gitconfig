@@ -14,6 +14,7 @@
   c = commit
   d = diff
   s = status
+  cl = clone
   co = checkout
   pl = pull
   ps = push
