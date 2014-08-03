@@ -1,0 +1,19 @@
+[user]
+  name = Shintaro Kobori
+  email = shinkbr@gmail.com
+[color]
+  ui = auto
+[gui]
+[push]
+  default = simple
+[core]
+  editor = vim
+[alias]
+  a = add
+  b = branch
+  c = commit
+  d = diff
+  s = status
+  co = checkout
+  pl = pull
+  ps = push
