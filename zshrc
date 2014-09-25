@@ -53,7 +53,6 @@ case $OSTYPE in
     export LSCOLORS=gxfxcxdxbxegedabagacad
     alias ls='ls -G';;
   linux-gnu)
-    source $HOME/.perl5/etc/bashrc # perlbrew
     export LS_COLORS='di=00;36:ln=00;35'
     alias ls='ls --color=auto';;
 esac
