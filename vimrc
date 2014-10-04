@@ -1,8 +1,9 @@
 " Templates
 autocmd BufNewFile *.c 0r $HOME/.vim/template/template.c
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/template.cpp
-autocmd BufNewFile *.tex 0r $HOME/.vim/template/template.tex
 autocmd BufNewFile *.html 0r $HOME/.vim/template/template.html
+autocmd BufNewFile *.rb 0r $HOME/.vim/template/template.rb
+autocmd BufNewFile *.tex 0r $HOME/.vim/template/template.tex
 
 " Encodings & File formats
 set encoding=utf-8
