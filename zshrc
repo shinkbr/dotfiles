@@ -30,6 +30,7 @@ RPROMPT='%F{yellow}[%/]%f'
 # In SSH
 if [ ! -z $SSH_CLIENT ]
 then
+  TERM=xterm
   PROMPT='%F{green}[%n-%D{%T}]%#%f '
   RPROMPT='%F{yellow}[%/%f%F{green}@%M%f%F{yellow}]%f'
 fi
@@ -63,16 +64,6 @@ source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # cd
 setopt auto_cd
 chpwd(){ls}
-
-# In SSH
-if [ ! -z $SSH_CLIENT ]
-then
-  TERM=xterm
-  if [ -z $TMUX ]
-  then
-    tmux attach
-  fi
-fi
 
 # Run
 ls
