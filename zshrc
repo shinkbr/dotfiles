@@ -1,6 +1,5 @@
 # PATH
 export PATH=/usr/local/bin:$HOME/.bin:$PATH
-eval "$(rbenv init -)" #rbenv
 export PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH" # Ruby on Rails
 
 # Vim bind
@@ -27,6 +26,7 @@ bindkey '^N' history-beginning-search-forward
 # Prompts
 PROMPT='%F{red}[%n-%D{%T}]%#%f '
 RPROMPT='%F{yellow}[%/]%f'
+
 # In SSH
 if [ ! -z $SSH_CLIENT ]
 then
@@ -47,6 +47,7 @@ alias lla='ls -lha'
 alias lal='ls -lha'
 alias javac='javac -J-Duser.language=en -J-Duser.country=us'
 alias g='git'
+alias reload="source $HOME/.zshrc"
 
 # OS-specific configuration
 case $OSTYPE in
@@ -64,6 +65,12 @@ source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # cd
 setopt auto_cd
 chpwd(){ls}
+
+# local zshrc
+if [ -f $HOME/.zshrc_local ];
+then
+  source $HOME/.zshrc_local
+fi
 
 # Run
 ls
