@@ -3,6 +3,7 @@ autocmd BufNewFile *.c 0r $HOME/.vim/template/template.c
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/template.cpp
 autocmd BufNewFile *.html 0r $HOME/.vim/template/template.html
 autocmd BufNewFile *.rb 0r $HOME/.vim/template/template.rb
+autocmd BufNewFile *.sh 0r $HOME/.vim/template/template.sh
 autocmd BufNewFile *.tex 0r $HOME/.vim/template/template.tex
 
 " Encodings & File formats
