@@ -60,3 +60,13 @@ set wrapscan
 " Completion
 set wildmenu
 set wildmode=list:full
+
+" Binary edit mode
+augroup Binary
+  autocmd!
+  autocmd BufReadPost * if &binary | silent %!xxd -g 1
+  autocmd BufReadPost * set ft=xxd | endif
+  autocmd BufWritePre * if &binary | %!xxd -r | endif
+  autocmd BufWritePost * if &binary | silent %!xxd -g 1
+  autocmd BufWritePost * set nomod | endif
+augroup END
