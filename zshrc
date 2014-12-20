@@ -1,6 +1,5 @@
 # PATH
 export PATH=/usr/local/bin:$HOME/.bin:$PATH
-export PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH" # Ruby on Rails
 
 # Vim bind
 bindkey -v
@@ -13,7 +12,7 @@ autoload -Uz compinit
 compinit
 
 # History
-HISTFILE=$HOME/.histfile
+HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 setopt extended_history
