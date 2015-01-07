@@ -23,14 +23,19 @@ bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
 
 # Prompts
-PROMPT=$'%F{yellow}%U%n@%M%u%f - %F{yellow}(%D %*%u)%f - %F{yellow}[%/]%f\n%# '
-
+PROMPT_COLOR='yellow'
 # In SSH
 if [ ! -z $SSH_CLIENT ]
 then
-  TERM=xterm
-  PROMPT=$'%F{green}%U%n@%M%u%f - %F{green}(%D %*%u)%f - %F{green}[%/]%f\n%# '
+  PROMPT_COLOR='green'
 fi
+# When root
+if [ $USER = 'root' ]
+then
+  PROMPT_COLOR='red'
+fi
+PROMPT="%F{${PROMPT_COLOR}}%U%n@%M%u - (%D %*%u) - [%/]%f
+%# "
 
 # Aliases
 alias v=vim
