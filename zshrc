@@ -23,15 +23,13 @@ bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
 
 # Prompts
-PROMPT='%F{red}[%n-%D{%T}]%#%f '
-RPROMPT='%F{yellow}[%/]%f'
+PROMPT='%F{yellow}%U%n@%M%u%f - %F{green}(%D %*%u)%f - %F{green}[%/]%f
+%# '
 
 # In SSH
 if [ ! -z $SSH_CLIENT ]
 then
   TERM=xterm
-  PROMPT='%F{green}[%n-%D{%T}]%#%f '
-  RPROMPT='%F{yellow}[%/%f%F{green}@%M%f%F{yellow}]%f'
 fi
 
 # Aliases
