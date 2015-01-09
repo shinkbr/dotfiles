@@ -23,25 +23,28 @@ bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
 
 # Prompts
-PROMPT_COLOR_USER='magenta'
-PROMPT_COLOR_HOSTNAME='magenta'
-PROMPT_COLOR_PWD='yellow'
-PROMPT_COLOR_TIME='195'
+setopt transient_rprompt
+PROMPT_COLOR_LEFT='69'
+PROMPT_COLOR_USER='69'
+PROMPT_COLOR_HOSTNAME='69'
+PROMPT_COLOR_PWD='220'
 
 # In SSH
 if [ ! -z $SSH_CLIENT ]
 then
+  PROMPT_COLOR_LEFT='green'
   PROMPT_COLOR_USER='green'
   PROMPT_COLOR_HOSTNAME='green'
 fi
 # When root
 if [ $USER = 'root' ]
 then
+  PROMPT_COLOR_LEFT='red'
   PROMPT_COLOR_USER='red'
   PROMPT_COLOR_HOSTNAME='red'
 fi
-PROMPT="%U%F{${PROMPT_COLOR_USER}}%n%F{${PROMPT_COLOR_HOSTNAME}}@%M%f%u:%F{${PROMPT_COLOR_PWD}}%/%f
-%F{${PROMPT_COLOR_TIME}}[%D %*]%#%f "
+PROMPT="%F{${PROMPT_COLOR_LEFT}}[%D %*]%#%f "
+RPROMPT="[%f%F{${PROMPT_COLOR_USER}}%n%f%F{${PROMPT_COLOR_HOSTNAME}}@%M%f:%F{${PROMPT_COLOR_PWD}}%/%f]"
 
 # Aliases
 alias v=vim
