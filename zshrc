@@ -26,7 +26,7 @@ bindkey '^N' history-beginning-search-forward
 PROMPT_COLOR_USER='magenta'
 PROMPT_COLOR_HOSTNAME='magenta'
 PROMPT_COLOR_PWD='yellow'
-PROMPT_COLOR_TIME='white'
+PROMPT_COLOR_TIME='195'
 
 # In SSH
 if [ ! -z $SSH_CLIENT ]
@@ -40,7 +40,7 @@ then
   PROMPT_COLOR_USER='red'
   PROMPT_COLOR_HOSTNAME='red'
 fi
-PROMPT="%U%F{${PROMPT_COLOR_HOSTNAME}}%n@%M%f%u:%F{${PROMPT_COLOR_PWD}}%/%f
+PROMPT="%U%F{${PROMPT_COLOR_USER}}%n%F{${PROMPT_COLOR_HOSTNAME}}@%M%f%u:%F{${PROMPT_COLOR_PWD}}%/%f
 %F{${PROMPT_COLOR_TIME}}[%D %*]%#%f "
 
 # Aliases
