@@ -39,7 +39,6 @@ if [ $USER = 'root' ]
 then
   PROMPT_COLOR_USER='red'
   PROMPT_COLOR_HOSTNAME='red'
-  PROMPT_COLOR_TIME='red'
 fi
 PROMPT="%U%F{${PROMPT_COLOR_HOSTNAME}}%n@%M%f%u:%F{${PROMPT_COLOR_PWD}}%/%f
 %F{${PROMPT_COLOR_TIME}}[%D %*]%#%f "
