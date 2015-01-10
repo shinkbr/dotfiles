@@ -1,6 +1,3 @@
-# PATH
-export PATH=/usr/local/bin:$HOME/.bin:$PATH
-
 # Vim bind
 bindkey -v
 if which vim > /dev/null; then
@@ -19,8 +16,11 @@ setopt extended_history
 setopt share_history
 setopt hist_ignore_dups
 setopt hist_reduce_blanks
-bindkey '^P' history-beginning-search-backward
-bindkey '^N' history-beginning-search-forward
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey '^P' history-beginning-search-backward-end
+bindkey '^N' history-beginning-search-forward-end
 
 # Prompts
 PROMPT_COLOR_LEFT='69'
@@ -36,7 +36,7 @@ then
   PROMPT_COLOR_HOSTNAME='green'
 fi
 # When root
-if [ $USER = 'root' ]
+if [ `id -u` -eq 0 ]
 then
   PROMPT_COLOR_LEFT='red'
   PROMPT_COLOR_USER='red'
@@ -58,6 +58,9 @@ alias lal='ls -lha'
 alias javac='javac -J-Duser.language=en -J-Duser.country=us'
 alias g='git'
 alias reload="source $HOME/.zshrc"
+if which colordiff > /dev/null; then
+  alias diff='colordiff -u'
+fi
 
 # OS-specific configuration
 case $OSTYPE in
@@ -75,6 +78,16 @@ source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # cd
 setopt auto_cd
 chpwd(){ls}
+
+# Directory stack with completion
+DIRSTACKSIZE=100
+setopt AUTO_PUSHD
+zstyle ':completion:*' menu select
+zstyle ':completion:*:cd:*' ignore-parents parent pwd
+zstyle ':completion:*:descriptions' format '%BCompleting%b %U%d%u'
+
+# Match case-insensitively
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # local zshrc
 if [ -f $HOME/.zshrc_local ];
