@@ -72,9 +72,6 @@ case $OSTYPE in
     alias ls='ls --color=auto';;
 esac
 
-# Syntax highlighting
-source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # cd
 setopt auto_cd
 chpwd(){ls}
@@ -89,11 +86,8 @@ zstyle ':completion:*:descriptions' format '%BCompleting%b %U%d%u'
 # Match case-insensitively
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
-# local zshrc
-if [ -f $HOME/.zshrc_local ];
-then
-  source $HOME/.zshrc_local
-fi
+# Syntax highlighting
+source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Run
 ls
