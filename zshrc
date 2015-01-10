@@ -23,7 +23,6 @@ bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
 
 # Prompts
-setopt transient_rprompt
 PROMPT_COLOR_LEFT='69'
 PROMPT_COLOR_USER='69'
 PROMPT_COLOR_HOSTNAME='69'
