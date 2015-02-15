@@ -1,3 +1,6 @@
+# Set terminfo
+export TERM=xterm-256color
+
 # Vim bind
 bindkey -v
 if which vim > /dev/null; then
