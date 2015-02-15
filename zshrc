@@ -42,8 +42,8 @@ then
   PROMPT_COLOR_USER='red'
   PROMPT_COLOR_HOSTNAME='red'
 fi
-PROMPT="%F{${PROMPT_COLOR_LEFT}}[%D %*]%#%f "
-RPROMPT="[%f%F{${PROMPT_COLOR_USER}}%n%f%F{${PROMPT_COLOR_HOSTNAME}}@%m%f:%F{${PROMPT_COLOR_PWD}}%/%f]"
+PROMPT="%F{${PROMPT_COLOR_LEFT}}[%n-%*]%#%f "
+RPROMPT="[%F{${PROMPT_COLOR_HOSTNAME}}%m%f:%F{${PROMPT_COLOR_PWD}}%~%f]"
 
 # Aliases
 alias v=vim
