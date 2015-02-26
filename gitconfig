@@ -13,9 +13,15 @@
   a = add
   b = branch
   c = commit
-  d = diff
-  s = status
+  ca = commit --amend
   cl = clone
   co = checkout
+  d = diff
+  l = log
   pl = pull
   ps = push
+  r = reset
+  rh = reset --hard
+  rs = reset --soft
+  rv = revert
+  s = status
