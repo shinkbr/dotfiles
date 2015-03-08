@@ -1,8 +1,6 @@
 #!/bin/bash
 
-cd ~
-
-dotdir=$(dirname $0)
+dotdir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
 
 declare -a files=(
 zshrc
