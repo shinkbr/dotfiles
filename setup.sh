@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~
+
 dotdir=$(dirname $0)
 
 declare -a files=(
@@ -10,6 +12,7 @@ vimrc
 tmux.conf
 gitconfig
 gitignore
+vimperatorrc
 )
 
 red='\033[31m'
