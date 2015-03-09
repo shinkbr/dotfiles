@@ -18,12 +18,12 @@ nocolor='\033[0m'
 
 for i in ${files[@]}
 do
-  if [ ! -e ~/.$i ]
+  if [ ! -e ~/.${i} ]
   then
-    echo "ln -s $dotdir/$i ~/.$i"
-    ln -s $dotdir/$i ~/.$i
+    echo "ln -s ${dotdir}/${i} ~/.${i}"
+    ln -s ${dotdir}/${i} ~/.${i}
   else
-    echo -e "${red}~/.$i exists.${nocolor}"
+    echo -e "${red}~/.${i} exists.${nocolor}"
   fi
 done
 
