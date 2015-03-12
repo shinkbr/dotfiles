@@ -17,6 +17,7 @@
   cl = clone
   co = checkout
   d = diff
+  f = fetch
   l = log
   pl = pull
   ps = push
