@@ -60,7 +60,8 @@ alias lla='ls -lha'
 alias lal='ls -lha'
 alias javac='javac -J-Duser.language=en -J-Duser.country=us'
 alias g='git'
-alias reload="source $HOME/.zshrc"
+alias reload='source $HOME/.zshrc'
+alias tm='tmux'
 if which colordiff > /dev/null; then
   alias diff='colordiff -u'
 fi
