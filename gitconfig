@@ -9,6 +9,8 @@
   editor = vim
   pager = less
   excludesfile = ~/.gitignore
+[diff]
+  algorithm = histogram
 [alias]
   a = add
   b = branch
