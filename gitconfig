@@ -14,7 +14,7 @@
   a = add
   b = branch
   c = commit
-  ca = commit --amend
+  ca = commit -a
   cl = clone
   co = checkout
   d = diff
