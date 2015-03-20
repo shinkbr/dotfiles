@@ -11,20 +11,33 @@
   excludesfile = ~/.gitignore
 [diff]
   algorithm = histogram
+[log]
+  decorate = short
 [alias]
   a = add
   b = branch
+  ba = branch -a
   c = commit
   ca = commit -a
   cl = clone
   co = checkout
   d = diff
+  dm = diff master
+  ds = diff --staged
+  dsw = diff --staged --word-diff
+  dw = diff --word-diff
+  dws = diff --word-diff --staged
   f = fetch
   l = log
+  la = log --graph -p --stat
+  lg = log --graph
+  lp = log -p
+  ls = log --stat
   pl = pull
   ps = push
-  r = reset
-  rh = reset --hard
-  rs = reset --soft
+  rs = reset
+  rsh = reset --hard
+  rss = reset --soft
   rv = revert
   s = status
+  sh = show
