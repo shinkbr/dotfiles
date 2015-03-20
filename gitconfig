@@ -3,7 +3,6 @@
   email = shinkbr@gmail.com
 [color]
   ui = auto
-[gui]
 [push]
   default = current
 [core]
