@@ -2,7 +2,13 @@
 Yet Another Dot-files Repository
 
 ## Setup
-Have an SSH key associated with a GitHub account and run the following command.
+#### Using SSH
+Requires an SSH key associated with a GitHub account.
 ```
 git clone --recursive git@github.com:shinkbr/dotfiles.git ~/.dotfiles && ~/.dotfiles/setup.sh
+```
+
+#### Using HTTPS
+```
+git clone --recursive https://github.com/shinkbr/dotfiles.git ~/.dotfiles && ~/.dotfiles/setup.sh
 ```
