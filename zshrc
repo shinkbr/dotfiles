@@ -18,6 +18,7 @@ SAVEHIST=100000
 setopt extended_history
 setopt share_history
 setopt hist_ignore_dups
+setopt hist_ignore_space
 setopt hist_reduce_blanks
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
