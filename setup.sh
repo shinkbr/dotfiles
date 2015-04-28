@@ -3,14 +3,14 @@
 dotdir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
 
 files=(
-zshrc
-zsh-syntax-highlighting
-vim
-vimrc
-tmux.conf
 gitconfig
 gitignore
+tmux.conf
+vim
 vimperatorrc
+vimrc
+zshrc
+zsh-syntax-highlighting
 )
 
 red='\033[31m'
