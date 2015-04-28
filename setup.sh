@@ -2,7 +2,7 @@
 
 dotdir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
 
-declare -a files=(
+files=(
 zshrc
 zsh-syntax-highlighting
 vim
@@ -16,14 +16,14 @@ vimperatorrc
 red='\033[31m'
 nocolor='\033[0m'
 
-for i in ${files[@]}
+for f in ${files[@]}
 do
-  if [ ! -e ~/.${i} ]
+  if [ ! -e ~/.${f} ]
   then
-    echo "ln -s ${dotdir}/${i} ~/.${i}"
-    ln -s ${dotdir}/${i} ~/.${i}
+    echo "ln -s ${dotdir}/${f} ~/.${f}"
+    ln -s ${dotdir}/${f} ~/.${f}
   else
-    echo -e "${red}~/.${i} exists.${nocolor}"
+    echo -e "${red}~/.${f} exists.${nocolor}"
   fi
 done
 
