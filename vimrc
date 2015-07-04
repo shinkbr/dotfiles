@@ -1,10 +1,10 @@
 " Templates
-autocmd BufNewFile *.c 0r $HOME/.vim/template/template.c
-autocmd BufNewFile *.cpp 0r $HOME/.vim/template/template.cpp
-autocmd BufNewFile *.html 0r $HOME/.vim/template/template.html
-autocmd BufNewFile *.rb 0r $HOME/.vim/template/template.rb
-autocmd BufNewFile *.sh 0r $HOME/.vim/template/template.sh
-autocmd BufNewFile *.tex 0r $HOME/.vim/template/template.tex
+autocmd BufNewFile *.c    0 r $HOME/.vim/template/template.c
+autocmd BufNewFile *.cpp  0 r $HOME/.vim/template/template.cpp
+autocmd BufNewFile *.html 0 r $HOME/.vim/template/template.html
+autocmd BufNewFile *.rb   0 r $HOME/.vim/template/template.rb
+autocmd BufNewFile *.sh   0 r $HOME/.vim/template/template.sh
+autocmd BufNewFile *.tex  0 r $HOME/.vim/template/template.tex
 
 " Encodings & File formats
 set encoding=utf-8
@@ -72,9 +72,9 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
   call neobundle#begin(expand('~/.vim/bundle/'))
 endif
-NeoBundle "matchit.zip"
-NeoBundle "vimtaku/hl_matchit.vim"
+NeoBundle 'godlygeek/tabular'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'matchit.zip'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'scrooloose/nerdtree'
@@ -87,7 +87,9 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-markdown'
 NeoBundle 'tpope/vim-rails'
+NeoBundle 'vimtaku/hl_matchit.vim'
 call neobundle#end()
 filetype plugin indent on
 filetype indent on
