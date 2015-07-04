@@ -35,7 +35,6 @@ set autoindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-filetype plugin indent on
 
 " Remap
 nmap j gj
@@ -45,10 +44,6 @@ imap <C-j> <C-o>gj
 imap <C-k> <C-o>gk
 imap <C-h> <Left>
 imap <C-l> <Right>
-
-" Brackets completion
-inoremap {<Enter> {<Enter>}<Esc>O
-autocmd FileType ruby inoremap do<Enter> do<Enter>end<Esc>O
 
 " Search
 set hlsearch
@@ -70,3 +65,33 @@ augroup Binary
   autocmd BufWritePost * if &binary | silent %!xxd -g 1
   autocmd BufWritePost * set nomod | endif
 augroup END
+
+" NeoBundle
+filetype off
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+  call neobundle#begin(expand('~/.vim/bundle/'))
+endif
+NeoBundle "matchit.zip"
+NeoBundle "vimtaku/hl_matchit.vim"
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimshell'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'Townk/vim-autoclose'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-rails'
+call neobundle#end()
+filetype plugin indent on
+filetype indent on
+
+colorscheme jellybeans
+let g:indent_guides_enable_on_vim_startup = 1
+let g:hl_matchit_enable_on_vim_startup = 1
