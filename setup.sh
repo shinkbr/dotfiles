@@ -9,8 +9,8 @@ tmux.conf
 vim
 vimperatorrc
 vimrc
-zshrc
 zsh-syntax-highlighting
+zshrc
 )
 
 red='\033[31m'
