@@ -1,4 +1,8 @@
-map w :open weblios<Space>
-map W :tabopen weblios<Space>
-noremap <C-a> <Ins><C-a><Ins>
-inoremap <C-a> <Ins><C-a><Ins>
+" vim: set filetype=vim :
+
+" shortcut for listing recently closed tabs
+nnoremap U :undo<Space>
+
+" shortcut for weblio search engine (provided the engine is added to Firefox)
+nnoremap w :open weblios<Space>
+nnoremap W :tabopen weblios<Space>
