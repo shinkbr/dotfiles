@@ -20,8 +20,7 @@ for f in ${files[@]}
 do
   if [ ! -e ~/.${f} ]
   then
-    echo "ln -s ${dotdir}/${f} ~/.${f}"
-    ln -s ${dotdir}/${f} ~/.${f}
+    ln -sv ${dotdir}/${f} ~/.${f}
   else
     echo -e "${red}~/.${f} exists.${nocolor}"
   fi
