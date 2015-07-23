@@ -50,7 +50,7 @@ PROMPT="%F{${PROMPT_COLOR_LEFT}}[%n-%*]%#%f "
 RPROMPT="[%F{${PROMPT_COLOR_HOSTNAME}}%m%f:%F{${PROMPT_COLOR_PWD}}%~%f]"
 
 # Aliases
-alias v=vim
+alias v='vim'
 alias vr='vim -R'
 alias vimr='vim -R'
 alias c='cd'
