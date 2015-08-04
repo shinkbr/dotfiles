@@ -50,18 +50,19 @@ PROMPT="%F{${PROMPT_COLOR_LEFT}}[%n-%*]%#%f "
 RPROMPT="[%F{${PROMPT_COLOR_HOSTNAME}}%m%f:%F{${PROMPT_COLOR_PWD}}%~%f]"
 
 # Aliases
-alias v='vim'
-alias vr='vim -R'
-alias vimr='vim -R'
 alias c='cd'
 alias l='ls'
 alias ll='ls -lh'
 alias la='ls -a'
 alias lla='ls -lha'
 alias lal='ls -lha'
+alias v='vim'
+alias vr='vim -R'
+alias vimr='vim -R'
 alias g='git'
-alias reload='source $HOME/.zshrc'
+alias be='bundle exec'
 alias tm='tmux'
+alias reload='source $HOME/.zshrc'
 if which colordiff > /dev/null; then
   alias diff='colordiff -u'
 fi
