@@ -95,5 +95,8 @@ filetype plugin indent on
 filetype indent on
 
 colorscheme jellybeans
+highlight LineNr ctermbg=none
+highlight NonText ctermbg=none
+highlight Normal ctermbg=none
 let g:indent_guides_enable_on_vim_startup = 1
 let g:hl_matchit_enable_on_vim_startup = 1
