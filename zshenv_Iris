@@ -1,3 +1,9 @@
+# Taken from El Capitan's /etc/zprofile
+# system-wide environment settings for zsh(1)
+if [ -x /usr/libexec/path_helper ]; then
+  eval `/usr/libexec/path_helper -s`
+fi
+
 # PATH
 export PATH=$HOME/bin:$HOME/.bin:$PATH
 
