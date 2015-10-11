@@ -2,6 +2,7 @@
 autocmd BufNewFile *.c    0 r $HOME/.vim/template/template.c
 autocmd BufNewFile *.cpp  0 r $HOME/.vim/template/template.cpp
 autocmd BufNewFile *.html 0 r $HOME/.vim/template/template.html
+autocmd BufNewFile *.py   0 r $HOME/.vim/template/template.py
 autocmd BufNewFile *.rb   0 r $HOME/.vim/template/template.rb
 autocmd BufNewFile *.sh   0 r $HOME/.vim/template/template.sh
 autocmd BufNewFile *.tex  0 r $HOME/.vim/template/template.tex
