@@ -9,6 +9,7 @@
   editor = vim
   pager = less
   excludesfile = ~/.gitignore
+  quotepath = false
 [diff]
   algorithm = histogram
 [log]
