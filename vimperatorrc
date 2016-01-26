@@ -10,3 +10,7 @@ nnoremap W :tabopen weblios<Space>
 " shortcut for the ease of scroll
 nnoremap j <C-d>
 nnoremap k <C-u>
+
+" disable paste-and-go
+nnoremap p <Nop>
+nnoremap P <Nop>
