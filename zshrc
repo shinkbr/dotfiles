@@ -63,7 +63,8 @@ alias g='git'
 alias be='bundle exec'
 alias tm='tmux'
 alias reload='source $HOME/.zshrc'
-if which colordiff > /dev/null; then
+if which colordiff &> /dev/null
+then
   alias diff='colordiff -u'
 fi
 
