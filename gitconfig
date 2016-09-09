@@ -16,6 +16,7 @@
   decorate = short
 [alias]
   a = add
+  ap = add -p
   b = branch
   ba = branch -a
   c = commit
