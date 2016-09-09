@@ -40,6 +40,8 @@ set expandtab
 " Remap
 nmap j gj
 nmap k gk
+nmap <S-h> 5h
+nmap <S-l> 5l
 nnoremap ; :
 imap <C-j> <C-o>gj
 imap <C-k> <C-o>gk
