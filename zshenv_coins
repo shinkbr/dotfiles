@@ -1,2 +1,0 @@
-export PATH=$HOME/bin:$HOME/.bin:/usr/local3/coins/macosx/bin:$PATH
-umask 077
