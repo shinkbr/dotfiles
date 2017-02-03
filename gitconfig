@@ -40,6 +40,7 @@
   ls = log --stat
   pl = pull
   ps = push
+  root = rev-parse --show-toplevel
   rs = reset
   rsh = reset --hard
   rss = reset --soft
