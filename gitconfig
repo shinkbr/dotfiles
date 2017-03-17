@@ -33,7 +33,7 @@
   dw = diff --word-diff
   dws = diff --word-diff --staged
   f = fetch
-  l = log
+  l = log --graph --stat
   la = log --graph -p --stat
   lg = log --graph
   lp = log -p
