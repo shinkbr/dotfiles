@@ -1,9 +1,9 @@
 [user]
   name = Shintaro Kobori
   email = shinkbr@gmail.com
-#   signingkey = xxxxxxxx
+  # signingkey = xxxxxxxx
 [commit]
-#   gpgsign = true
+  # gpgsign = true
 [color]
   ui = auto
 [push]
