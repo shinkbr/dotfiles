@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+num=4
+
+if [[ "${1}" -gt "0" ]]; then
+  num="${1}"
+fi
+
+openssl rand -hex "${num}"
