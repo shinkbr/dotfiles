@@ -3,4 +3,3 @@
 l=$(( (RANDOM % 8) + 8 ))
 c="A-Za-z0-9"
 LC_CTYPE=C tr -dc "$c" < /dev/urandom | head -c ${1:-${l}}
-echo
