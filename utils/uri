@@ -1,19 +1,28 @@
-#!/usr/bin/env bash
+#!/usr/bin/env ruby
+# coding: utf-8
 
-usage () {
-  echo "Usage: $( basename $0 ) <e|d>"
-}
+require 'uri'
 
-if [ "$#" -ne 1 ]; then
-  usage
-  exit 1
-fi
+def abort_with_help
+  abort "Usage: #{File.basename($0)} <e|d>"
+end
 
-if [ "$1" = "e" ]; then
-  cat - | ruby -ruri -ne 'print URI.encode($_, " \"$&+,/:;=?@[]<>|")'
-elif [ "$1" = "d" ]; then
-  cat - | ruby -ruri -ne 'print URI.decode($_)'
-else
-  usage
-  exit 1
-fi
+if ARGV.size != 1
+  abort_with_help
+end
+
+mode = ARGV[0]
+unless ['e', 'd'].include?(mode)
+  abort_with_help
+end
+
+unsafe = ((32..126).map {|i| i.chr} - ('0'..'9').to_a - ('a'..'z').to_a - ('A'..'Z').to_a).join('')
+# => " !\"\#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+
+STDIN.each_line do |line|
+  if mode == 'e'
+    print URI.encode(line, unsafe)
+  elsif mode == 'd'
+    print URI.decode(line)
+  end
+end
