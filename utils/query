@@ -2,4 +2,4 @@
 
 read uri
 query=${uri##*\?}
-echo $query | tr "&" "\n"
+echo -n "$query" | tr "&" "\n"
