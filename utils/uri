@@ -23,7 +23,11 @@ STDIN.each_line do |line|
   case mode
   when 'e'
     print URI.encode(line, unsafe)
+  when 'ex'
+    print URI.encode(line, unsafe).gsub('%', '\x')
   when 'd'
     print URI.decode(line)
+  when 'dx'
+    print URI.decode(line.gsub('\x', '%'))
   end
 end
