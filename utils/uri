@@ -4,7 +4,7 @@
 require 'uri'
 
 def abort_with_help
-  abort "Usage: #{File.basename($0)} <e|d>"
+  abort "Usage: #{File.basename($0)} <e|ex|d|dx>"
 end
 
 if ARGV.size != 1
@@ -12,7 +12,7 @@ if ARGV.size != 1
 end
 
 mode = ARGV[0]
-unless ['e', 'd'].include?(mode)
+unless ['e', 'ex', 'd', 'dx'].include?(mode)
   abort_with_help
 end
 
@@ -20,9 +20,10 @@ unsafe = ((32..126).map {|i| i.chr} - ('0'..'9').to_a - ('a'..'z').to_a - ('A'..
 # => " !\"\#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 
 STDIN.each_line do |line|
-  if mode == 'e'
+  case mode
+  when 'e'
     print URI.encode(line, unsafe)
-  elsif mode == 'd'
+  when 'd'
     print URI.decode(line)
   end
 end
