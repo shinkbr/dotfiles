@@ -77,7 +77,6 @@ if has('vim_starting')
 endif
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'matchit.zip'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'pangloss/vim-javascript'
@@ -92,7 +91,6 @@ NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'tpope/vim-rails'
-NeoBundle 'vimtaku/hl_matchit.vim'
 call neobundle#end()
 filetype plugin indent on
 filetype indent on
@@ -102,4 +100,3 @@ highlight LineNr ctermbg=none
 highlight NonText ctermbg=none
 highlight Normal ctermbg=none
 let g:indent_guides_enable_on_vim_startup = 1
-let g:hl_matchit_enable_on_vim_startup = 1
