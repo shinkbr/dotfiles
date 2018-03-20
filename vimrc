@@ -90,7 +90,6 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-markdown'
-NeoBundle 'tpope/vim-rails'
 call neobundle#end()
 filetype plugin indent on
 filetype indent on
