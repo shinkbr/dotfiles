@@ -1,6 +1,7 @@
 # Taken from El Capitan's /etc/zprofile
 # system-wide environment settings for zsh(1)
 if [ -x /usr/libexec/path_helper ]; then
+  setopt no_global_rcs
   eval `/usr/libexec/path_helper -s`
 fi
 
