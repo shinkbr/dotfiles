@@ -1,5 +1,5 @@
 # dotfiles
-Yet Another Dot-files Repository
+Yet Another Dotfiles
 
 ## Setup
 #### Using SSH
