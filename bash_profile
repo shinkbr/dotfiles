@@ -17,3 +17,5 @@ eval "$(nodenv init -)"
 
 # adb
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+
+source ~/.bashrc

@@ -17,13 +17,6 @@ PROMPT_COLOR_USER='69'
 PROMPT_COLOR_HOSTNAME='69'
 PROMPT_COLOR_PWD='220'
 
-# In SSH
-if [ ! -z $SSH_CLIENT ]
-then
-  PROMPT_COLOR_LEFT='green'
-  PROMPT_COLOR_USER='green'
-  PROMPT_COLOR_HOSTNAME='green'
-fi
 # When root
 if [ `id -u` -eq 0 ]
 then
