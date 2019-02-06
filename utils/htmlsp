@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+sed -e 's/\&/\&amp;/g' |
+  sed -e 's/"/\&quot;/g' |
+  sed -e "s/'/\&#039;/g" |
+  sed -e 's/</\&lt;/g' |
+  sed -e 's/>/\&gt;/g'
