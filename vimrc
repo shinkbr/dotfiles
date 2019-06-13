@@ -28,8 +28,6 @@ set showmatch
 set ruler
 set scrolloff=8
 set laststatus=2
-set statusline=%n:%<\ %f%a\ %m%r%h%w%y[%{&fenc!=''?&fenc:&enc}][%{&ff}]%=pos:%l,%c%V\ %obytes\ 0x%06.6B\ %03.3p%%
-highlight Comment ctermfg=32
 
 " Indentation
 set autoindent
@@ -78,7 +76,6 @@ if has('vim_starting')
 endif
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'scrooloose/nerdtree'
@@ -87,16 +84,18 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
+NeoBundle 'tomasiser/vim-code-dark'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-markdown'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 call neobundle#end()
 filetype plugin indent on
 filetype indent on
 
-colorscheme jellybeans
+colorscheme codedark
 highlight LineNr ctermbg=none
 highlight NonText ctermbg=none
 highlight Normal ctermbg=none
-let g:indent_guides_enable_on_vim_startup = 1
