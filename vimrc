@@ -17,6 +17,7 @@ set backspace=indent,eol,start
 set nocompatible
 
 " View
+language en_US.UTF-8
 syntax on
 set nowrap
 set confirm
