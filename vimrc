@@ -47,6 +47,7 @@ imap <C-j> <C-o>gj
 imap <C-k> <C-o>gk
 imap <C-h> <Left>
 imap <C-l> <Right>
+inoremap <S-Tab> <C-d>
 
 " Search
 set hlsearch
