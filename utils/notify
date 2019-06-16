@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ "$(uname -s)" != "Darwin" ]; then
+  echo "notify is for macOS only. exiting."
+  exit 1
+fi
+
+osascript -e "display notification \"${1}\" with title \"notify\" sound name \"Basso\""
