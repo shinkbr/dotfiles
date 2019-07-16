@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 read uri
-query=${uri##*\?}
+query=${uri#*\?}
 echo -n "$query" | tr "&" "\n"
