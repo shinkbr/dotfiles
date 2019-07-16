@@ -5,4 +5,4 @@ if [ "$(uname -s)" != "Darwin" ]; then
   exit 1
 fi
 
-osascript -e "display notification \"${1}\" with title \"notify\" sound name \"Basso\""
+osascript -e "display notification \"${1}\" with title \"notify\" sound name \"Glass\""
