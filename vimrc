@@ -76,6 +76,7 @@ if has('vim_starting')
   call neobundle#begin(expand('~/.vim/bundle/'))
 endif
 NeoBundle 'godlygeek/tabular'
+NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'pangloss/vim-javascript'
@@ -87,7 +88,6 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'tomasiser/vim-code-dark'
 NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'vim-airline/vim-airline'
